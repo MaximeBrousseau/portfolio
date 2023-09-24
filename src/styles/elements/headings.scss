@@ -8,19 +8,25 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-secondary);
-    line-height: 1.1;
-    font-weight: bold;
-    margin: 0;
+    font-family: var(--font-primary);
 }
 
 h1 {
     font-size: var(--font-size-h1);
     line-height: 1;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    -webkit-text-stroke: 0.1px black;
+    letter-spacing: -2px;
+    line-height: 80%;
+    margin: 0;
 }
 
 h2 {
     font-size: var(--font-size-h2);
+    text-transform: uppercase;
+    
+
 }
 
 h3 {
