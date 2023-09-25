@@ -4,11 +4,8 @@
 
 [class^='icon'] {
     fill: currentColor; // inherit color of its context
-    display: inline-block;
+    display: block;
     flex: 0 0 auto; // prevent icon shrink/grow if in a flex parent
-    height: 1em;
-    vertical-align: middle;
-    width: 1em;
     stroke: transparent;
 }
 
@@ -38,6 +35,6 @@
 }
 
 .icon--xl {
-    height: 7em;
-    width: 7em;
+    height: 10em;
+    width: 10em;
 }
