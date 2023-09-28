@@ -60,3 +60,92 @@ h6 {
 em {
     font-style: italic;
 }
+
+
+.tag{
+    overflow: hidden;
+    width: 100%;
+    
+    h3{
+        white-space: nowrap;
+
+        animation: defilement4 3s infinite cubic-bezier(0.1, 0.8, 0.8, 0.1);
+
+        &:first-of-type{
+            animation: defilement3 3s infinite cubic-bezier(0.1, 0.8, 0.8, 0.1);
+        }
+
+        &:last-of-type{
+            animation: defilement5 3s infinite cubic-bezier(0.1, 0.8, 0.8, 0.1);
+        }
+
+    }
+
+    
+    
+}
+
+
+
+.sous_titre{  
+    border: 1px solid var(--color-black);
+    height: 80px;
+
+    position: relative;
+
+    .titre{
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+
+        display: flex;
+        gap: 15px;
+
+        h3{
+            white-space: nowrap;
+            animation: defilement 10s infinite linear;
+            margin-right: 10px;
+        }
+
+        &::after{
+            font-family: var(--font-primary);
+            font-size: var(--font-size-h3);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 0.85;
+            letter-spacing: 1.7px;
+            white-space: nowrap;
+
+            position: absolute;
+            top: 0; 
+            left: 0;
+            content: attr(data-text);
+            animation: defilement2 10s infinite linear;
+        }
+    }
+
+}
+
+@keyframes defilement {
+    0% { margin-left: 0; }
+    100% { margin-left: -100%; }
+}
+
+@keyframes defilement2 {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+}
+@keyframes defilement3{
+    0% { margin-left: 100%; }
+    100% { margin-left: -100%; }
+}
+@keyframes defilement4{
+    0% { margin-left: 110%; }
+    100% { margin-left: -110%; }
+}
+@keyframes defilement5{
+    0% { margin-left: 120%; }
+    100% { margin-left: -120%; }
+}
+

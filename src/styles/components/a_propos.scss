@@ -11,10 +11,11 @@
         box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.25);
         border: 1px solid var(--color-black);
 
-      .contenue { 
+      .contenu { 
         grid-area: 1 / 1 / 2 / 2; 
         border: 1px solid var(--color-black);
         position: relative;
+        
         
         .name{
             margin-top: -3%;
@@ -25,6 +26,8 @@
             position: absolute;
             bottom: 0;
             right: 0;
+            background-color: var(--color-primary);
+            z-index: 2;
 
             padding: 20px;
             border: 1px solid var(--color-black);
@@ -90,23 +93,6 @@
         border: 1px solid var(--color-black);
         box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.25);
         overflow: hidden;
-        
-        .sous_titre{
-            
-            border: 1px solid var(--color-black);
-            height: 80px;
-
-            position: relative;
-            .titre{
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-
-                display: flex;
-                gap: 15px;
-            }
-
-        }
 
         p{
            padding: 140px 50px;
@@ -116,6 +102,8 @@
 
     }
  }
+
+
 
 .logiciel{
         margin-top: -20px;
@@ -128,18 +116,6 @@
             
             .sous_titre{
                 z-index: -1; 
-                border: 1px solid var(--color-black);
-                height: 80px;
-    
-                position: relative;
-                .titre{
-                    position: absolute;
-                    bottom: -5px;
-                    left: 0;
-    
-                    display: flex;
-                    gap: 15px;
-                }  
             }
 
             .cards{
@@ -245,18 +221,6 @@
          justify-content: space-between;
         .sous_titre{
             z-index: -1; 
-            border: 1px solid var(--color-black);
-            height: 80px;
-
-            position: relative;
-            .titre{
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-
-                display: flex;
-                gap: 15px;
-            }  
         }
         .left{
         overflow: hidden;
@@ -310,5 +274,3 @@
     }
     
  }
- 
- 
