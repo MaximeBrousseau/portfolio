@@ -16,26 +16,27 @@ footer{
     .rejoindre{
         display: flex;
         flex-direction: column;
+        gap: 10px;
         justify-content: flex-end;
 
         .email{
             display: flex;
             align-items: baseline;
-            gap: 10px;
+            gap: 15px;
 
             p{
                 margin: 0;
-                font-size: calc(var(--font-size-content) - 0.2rem);
+                font-size: var(--font-size-content);
             }
         }
         .telephone{
             display: flex;
             align-items: baseline;
-            gap: 10px;
+            gap: 15px;
 
             p{
                 margin: 0;
-                font-size: calc(var(--font-size-content) - 0.2rem);
+                font-size:var(--font-size-content) ;
             }
         }
     }

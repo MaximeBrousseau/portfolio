@@ -12,19 +12,24 @@
         position: absolute;
         bottom: 80px;
         left: 200px;
+        z-index: -5;
     }
-    .cercle_bleu1 .c1, .cercle_bleu2 .c1{
-        z-index: -2;
-        position: absolute;
+    .cercle_bleu1, .cercle_bleu2{
+
+        .c1{
+          z-index: -3;
+        position: inherit;
         top: 0;
         left: 0;
         height: 575px;
         width: 575px;
         border-radius: 100%;
-        background-color: #4A7391;
+        background-color: #4A7391;  
+        }
+        
 
-        &::before{
-            z-index: -3;
+        .c2{
+            z-index: -2;
             position: inherit;
             top: 50px;
             left: 50px;
@@ -35,7 +40,7 @@
             background-color: #ACCFE8;
         }
 
-        &::after{
+        .c3{
             z-index: -1;
             position: inherit;
             top: 100px;
