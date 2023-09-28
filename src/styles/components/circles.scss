@@ -1,0 +1,102 @@
+.cercles_bleu{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+
+    .cercle_bleu1{
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+    .cercle_bleu2{
+        position: absolute;
+        bottom: 80px;
+        left: 200px;
+    }
+    .cercle_bleu1 .c1, .cercle_bleu2 .c1{
+        z-index: -2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 575px;
+        width: 575px;
+        border-radius: 100%;
+        background-color: #4A7391;
+
+        &::before{
+            z-index: -3;
+            position: inherit;
+            top: 50px;
+            left: 50px;
+            content: "";
+            height: 475px;
+            width: 475px;
+            border-radius: 100%;
+            background-color: #ACCFE8;
+        }
+
+        &::after{
+            z-index: -1;
+            position: inherit;
+            top: 100px;
+            left: 100px;
+            content: "";
+            height: 375px;
+            width: 375px;
+            border-radius: 100%;
+            background-color: #6391B2;
+        }
+    }
+}
+
+.cercles_orange{
+    position: relative;
+    bottom: 0;
+    left: 100px;
+
+    .cercle_orange1{
+        position: absolute;
+        bottom: 190px;
+        left: 170px;
+    }
+    .cercle_orange2{
+        z-index: -5;
+        position: absolute;
+        bottom: 110px;
+        left: 350px;
+    }
+    .cercle_orange1 .c1, .cercle_orange2 .c1{
+        z-index: -2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        background-color: #E27C5A;
+
+        &::before{
+            z-index: -3;
+            position: inherit;
+            top: 25px;
+            left: 25px;
+            content: "";
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+            background-color: #ECAE7D;
+        }
+
+        &::after{
+            z-index: -1;
+            position: inherit;
+            top: 50px;
+            left: 50px;
+            content: "";
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            background-color: #E27C5A;
+        }
+    }
+}
