@@ -215,16 +215,20 @@
  .qualite{  
     display: flex;
     justify-content: right;
- 
+    
     .contenu{
+        
         box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.25);
          width: 63%;
          display: flex;
          justify-content: space-between;
         .sous_titre{
             z-index: -1; 
+            background-color: var(--color-primary);
         }
         .left{
+            z-index: -1;
+        background-color: var(--color-primary);
         overflow: hidden;
         border-left:1px solid var(--color-black);
         border-bottom:1px solid var(--color-black);
@@ -278,16 +282,19 @@
  }
 
  .line_propos{
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 25%;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: fit-content;
+    height: inherit;
     text-align: center;
     overflow: hidden;
+    z-index: -4;
+
  }
 
  svg{
     display: inline-block;
-    height: 100%;
+    height: inherit;
+    width: fit-content;
  }

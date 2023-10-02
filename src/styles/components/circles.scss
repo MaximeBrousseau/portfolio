@@ -70,18 +70,21 @@
         bottom: 110px;
         left: 350px;
     }
-    .cercle_orange1 .c1, .cercle_orange2 .c1{
-        z-index: -2;
-        position: absolute;
+    .cercle_orange1, .cercle_orange2{
+        
+        .c3{
+            z-index: -3;
+        position: inherit;
         top: 0;
         left: 0;
         height: 300px;
         width: 300px;
         border-radius: 100%;
         background-color: #E27C5A;
+    }
 
-        &::before{
-            z-index: -3;
+        .c1{
+            z-index: -2;
             position: inherit;
             top: 25px;
             left: 25px;
@@ -92,7 +95,7 @@
             background-color: #ECAE7D;
         }
 
-        &::after{
+        .c2{
             z-index: -1;
             position: inherit;
             top: 50px;
