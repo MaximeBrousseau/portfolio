@@ -12,7 +12,7 @@ h6 {
 
 h1 {
     font-size: var(--font-size-h1);
-    line-height: 1;
+    
     text-transform: uppercase;
     color: var(--color-primary);
     -webkit-text-stroke: 0.1px black;
@@ -86,10 +86,11 @@ em {
 }
 
 .sous_titre{  
-    border: 1px solid var(--color-black);
+    border-bottom: 1px solid var(--color-black);
     height: 80px;
 
     position: relative;
+    overflow: hidden;
 
     .titre{
         position: absolute;
@@ -112,6 +113,46 @@ em {
             text-transform: uppercase;
             margin: 0;
             line-height: 0.85;
+            letter-spacing: 1.7px;
+            white-space: nowrap;
+
+            position: absolute;
+            top: 0; 
+            left: 0;
+            content: attr(data-text);
+            animation: defilement2 10s infinite linear;
+        }
+    }
+
+}
+.sous_titre2{  
+    border-bottom: 1px solid var(--color-black);
+    height: 80px;
+
+    position: relative;
+    overflow: hidden;
+
+    .titre{
+        position: absolute;
+        bottom: -32px;
+        left: 0;
+
+        display: flex;
+        gap: 15px;
+
+        h2{
+            white-space: nowrap;
+            animation: defilement 10s infinite linear;
+            margin: 0 15px 0 0;
+        }
+
+        &::after{
+            font-family: var(--font-primary);
+            font-size: var(--font-size-h2);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            
             letter-spacing: 1.7px;
             white-space: nowrap;
 

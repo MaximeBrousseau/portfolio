@@ -37,6 +37,7 @@ a {
     &:hover {
         text-decoration: none;
         color: var(--color-primary);
+        z-index: 1;
         &::before {
             transform: translateY(0);
             
