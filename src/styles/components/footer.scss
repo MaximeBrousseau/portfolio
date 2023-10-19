@@ -1,62 +1,48 @@
+
 footer{
-    .footer{
-    z-index: 20;
-    padding:5px 10px;
-    box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.25);
-
-    margin-bottom: 30px;
-    
-
-    height: 130px;
-
-    border: 1px solid var(--color-black);
-
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--color-primary);
-
-    .rejoindre{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: flex-end;
-
-        .email{
-            display: flex;
-            align-items: baseline;
-            gap: 15px;
-
-            p{
-                margin: 0;
-                font-size: var(--font-size-content);
-            }
-        }
-        .telephone{
-            display: flex;
-            align-items: baseline;
-            gap: 15px;
-
-            p{
-                margin: 0;
-                font-size:var(--font-size-content) ;
-            }
-        }
-    }
-
-    .logo{
-
-        a{
-            display: flex;
-            justify-content: right;
-            img{
-                max-width: 40%;
-            }
-
-        }
-
-    }
     
 }
-    text-align: center;
-    line-height: 0;
+.footer{
+    
+    
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   position: static;
+   bottom: 0;
+   width: 100%;
+
+  a{
+    img{
+          max-width: 50%;  
+        }
+        
+        display: flex;
+        align-items: center;
+
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 35px;
+        
+  }
+        
+  
+   
+
+   .rejoindre{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+
+    
+    padding: 35px;
+    padding-top: 200px;
+
+    p{
+        margin: 0;
+    }
+   }
 }
