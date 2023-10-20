@@ -1,10 +1,5 @@
-
-footer{
-    
-}
 .footer{
-    
-    
+  
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
@@ -20,22 +15,60 @@ footer{
         display: flex;
         align-items: center;
 
-        border-left: 2px solid black;
-        border-bottom: 2px solid black;
+        position: relative;
+
+        
         padding: 35px;
+
+        &::before{
+          content: "";
+          height: 450px;
+          width: 2px;
+          position: absolute;
+          bottom: -70px;
+          left: -2px;
+          background-color: var(--color-black);
+      }
+        &::after{
+          z-index: -1;
+          content: "";
+          height: 2px;
+          width: 400px;
+          position: absolute;
+          bottom: -2px;
+          left: -100px;
+          background-color: var(--color-black);
+      }
         
   }
-        
-  
-   
 
    .rejoindre{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 1px;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    
+
+    &::before{
+      content: "";
+      height: 350px;
+      width: 2px;
+      position: absolute;
+      bottom: -70px;
+      right: -2px;
+      background-color: var(--color-black);
+  }
+    &::after{
+      z-index: -1;
+      content: "";
+      height: 2px;
+      width: 500px;
+      position: absolute;
+      bottom: -2px;
+      right: -100px;
+      background-color: var(--color-black);
+  }
 
     
     padding: 35px;
