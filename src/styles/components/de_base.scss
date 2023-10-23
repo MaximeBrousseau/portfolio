@@ -495,3 +495,90 @@
     }
     }
 }
+
+/////////////////////////////////////////////////////////BI
+.b_industries{  
+
+.moodboard_container{
+    .moodboard{
+        max-width: 80%;
+}
+}
+
+.pro_crea{
+    margin-top: 100px;
+    justify-content: start;
+ 
+    .txt {
+      
+     a{
+        padding: 10px 30px;
+     }
+    }
+
+}
+
+.p_article{
+    max-width: 60%;
+    margin: 0;
+    margin-top: -30px;
+    
+
+    margin-left: 40%;
+    
+    .content{
+       padding: 50px;
+        p{
+            
+        }
+    }
+    
+    
+    
+    img{
+        width: 100%;
+        
+        margin: 0;
+    }
+
+}
+
+.making_of{
+    border: 2px solid var(--color-black);
+    max-width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+
+    .content{
+        
+
+        .blackbox{
+            width: 90%;
+            height: 700px;
+            margin: 5%;
+            
+            background-color: var(--color-black);
+            padding: 50px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .whitebox{
+                width: fit-content;
+                height: fit-content;
+                background-color: #fff;
+
+                h3{
+                    padding: 20px;
+                }
+                
+            }
+        }
+    }
+}
+
+
+}
+strong{
+    font-weight: 700;
+}

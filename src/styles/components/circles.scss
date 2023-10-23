@@ -696,7 +696,7 @@
         height: 575px;
         width: 575px;
         border-radius: 100%;
-        background-color: #7a7a7a;  
+        background-color: #5e5e5e;  
         }
         
 
@@ -721,7 +721,119 @@
             height: 375px;
             width: 375px;
             border-radius: 100%;
-            background-color: #b6b6b6;
+            background-color: #a4a57d;
+        }
+    }
+}
+
+.cercles_gris_1{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+
+    .cercle_gris1_1{
+        position: absolute;
+        bottom: 230px;
+        left: 350px;
+    }
+    .cercle_gris2_1{
+        position: absolute;
+        bottom: 380px;
+        left: 600px;
+        z-index: -5;
+    }
+    .cercle_gris1_1, .cercle_gris2_1{
+
+        .c1{
+          z-index: -3;
+        position: inherit;
+        top: 0;
+        left: 0;
+        height: 575px;
+        width: 575px;
+        border-radius: 100%;
+        background-color: #5e5e5e;  
+        }
+        
+
+        .c2{
+            z-index: -2;
+            position: inherit;
+            top: 50px;
+            left: 50px;
+            content: "";
+            height: 475px;
+            width: 475px;
+            border-radius: 100%;
+            background-color: #cecece;
+        }
+
+        .c3{
+            z-index: -1;
+            position: inherit;
+            top: 100px;
+            left: 100px;
+            content: "";
+            height: 375px;
+            width: 375px;
+            border-radius: 100%;
+            background-color: #a4a57d;
+        }
+    }
+}
+
+.cercles_gris_2{
+    position: absolute;
+    bottom: 0;
+    left: -40%;
+
+    .cercle_gris1_2{
+        position: absolute;
+        bottom: 1000px;
+        left: 50px;
+    }
+    .cercle_gris2_2{
+        position: absolute;
+        bottom: 1200px;
+        left: -150px;
+        z-index: -5;
+    }
+    .cercle_gris1_2, .cercle_gris2_2{
+
+        .c1{
+          z-index: -3;
+        position: inherit;
+        top: 0;
+        left: 0;
+        height: 575px;
+        width: 575px;
+        border-radius: 100%;
+        background-color: #5e5e5e;  
+        }
+        
+
+        .c2{
+            z-index: -2;
+            position: inherit;
+            top: 50px;
+            left: 50px;
+            content: "";
+            height: 475px;
+            width: 475px;
+            border-radius: 100%;
+            background-color: #cecece;
+        }
+
+        .c3{
+            z-index: -1;
+            position: inherit;
+            top: 100px;
+            left: 100px;
+            content: "";
+            height: 375px;
+            width: 375px;
+            border-radius: 100%;
+            background-color: #a4a57d;
         }
     }
 }
