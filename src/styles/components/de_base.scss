@@ -315,35 +315,8 @@
     .pro_crea{
         
         justify-content: start;  
-        .contenant2{
-            
-        }
-
-        .parent {
+        
        
-        }
-        
-        .txt {
-           
-           
-        }
-        img { 
-          
-        }
-        
-        .bars{
-           
-
-            .contenant{
-           
-            .bar{
-               
-            }
-        }
-        }
-        .div4 { 
-           
-        }
     }
 
     .p_article{
@@ -379,4 +352,146 @@
         
     }
    
+}
+
+/////////////////////////////////////////////////////////AT
+.audio_technica{
+    .p_article{
+        max-width: 100%;
+        .content{
+            padding: 50px;
+            p{
+                padding-bottom: 20px;
+                max-width: 75%;
+            }
+        }
+        
+        .carousel{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid var(--color-black);
+        border-left: none;
+        padding:  50px 0;
+
+        .hero{
+            position: absolute;
+            top: 10%;
+            right: 0;
+
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+            padding: 0;   
+            
+            border-top: 1px solid var(--color-black);
+            
+
+            p{
+                margin: 0;
+                padding: 5px;
+                line-height: 1;
+
+                background-color: var(--color-primary);
+                border: 1px solid var(--color-black);
+                border-top: none;
+            }
+        }
+        .feat{
+            position: absolute;
+            top: 40%;
+            left: 0;
+
+            display: flex;
+            
+            text-align: center;
+            padding: 0;   
+            
+            border-top: 1px solid var(--color-black);
+            
+
+            p{
+                margin: 0;
+                padding: 5px;
+                line-height: 1;
+
+                background-color: var(--color-primary);
+                border: 1px solid var(--color-black);
+                border-top: none;
+            }
+        }
+        .soft{
+            position: absolute;
+            top: 60%;
+            right: 0;
+
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+            padding: 0;   
+            
+            border-top: 1px solid var(--color-black);
+            
+
+            p{
+                margin: 0;
+                padding: 5px;
+                line-height: 1;
+
+                background-color: var(--color-primary);
+                border: 1px solid var(--color-black);
+                border-top: none;
+            }
+        }
+        .conx{
+            position: absolute;
+            top: 80%;
+            left: 0;
+
+            display: flex;
+            
+            text-align: center;
+            padding: 0;   
+            
+            border-top: 1px solid var(--color-black);
+            
+
+            p{
+                margin: 0;
+                padding: 5px;
+                line-height: 1;
+
+                background-color: var(--color-primary);
+                border: 1px solid var(--color-black);
+                border-top: none;
+            }
+        }
+        .foot{
+            position: absolute;
+            top: 90%;
+            right: 0;
+
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+            padding: 0;   
+            
+            border-top: 1px solid var(--color-black);
+            
+
+            p{
+                margin: 0;
+                padding: 5px;
+                line-height: 1;
+
+                background-color: var(--color-primary);
+                border: 1px solid var(--color-black);
+                border-top: none;
+            }
+        }
+        img{
+            max-width: 50%;
+        }
+    }
+    }
 }
