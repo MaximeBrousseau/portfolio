@@ -3,12 +3,21 @@
    ========================================================================== */
 
 .wrapper {
-    max-width: $breakpoint-lg;
+    max-width: 1780px;
     width: calc(100% - var(--spacing-md));
     margin: 0 auto;
+    @media screen and (max-width: $breakpoint-md) {
+        // max-width: 1480px;
+        width: calc(100% - var(--spacing-xl));
+    }
 }
 .wrapper2 {
-    max-width: $breakpoint-md;
+    max-width: 1480px;
     width: calc(100% - var(--spacing-md));
     margin: auto;
+    @media screen and (max-width: $breakpoint-md) {
+        // max-width: 1266px;
+        width: calc(100% - var(--spacing-xl));
+    }
 }
+

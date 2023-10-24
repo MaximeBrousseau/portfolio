@@ -2,42 +2,41 @@
    header / component
    ========================================================================== */
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 
     padding: 20px 0;
 
-    .nav{
-        border-bottom: 2px solid var(--color-black);
+    .nav {
         margin: 0;
-        
         padding: 0;
 
-        ul{
+        .nav_desktop {
+            border-bottom: 2px solid var(--color-black);
             display: flex;
             align-items: center;
             padding-left: 400px;
-            
+
 
             margin: 0;
 
-            li{
+            li {
                 list-style: none;
                 align-items: baseline;
 
                 line-height: 1.2;
 
-                a{
+                a {
                     display: block;
                     position: relative;
                     overflow: hidden;
 
-                    padding-top: 40px; 
-                    padding-bottom: 0; 
-                    padding-left: 20px; 
-                    padding-right: 20px; 
+                    padding-top: 40px;
+                    padding-bottom: 0;
+                    padding-left: 20px;
+                    padding-right: 20px;
 
 
                     &::after {
@@ -55,7 +54,7 @@
 
                     &:hover {
                         text-decoration: none;
-                        
+
                         &::after {
                             transform: translateY(0);
 
@@ -64,7 +63,18 @@
 
                 }
             }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                display: none;
+            }
+        }
+
+        .nav_mobile {
+            display: none;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                display: flex;
+            }
         }
     }
 }
-

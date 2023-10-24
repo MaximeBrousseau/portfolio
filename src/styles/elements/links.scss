@@ -8,7 +8,9 @@ a {
     text-decoration: none;
     font-weight: 700;
     font-size: 1.7rem;
-    
+    @media screen and (max-width: $breakpoint-sm) {
+       font-size: 1.125rem;
+    }
 }
 
 .button{
