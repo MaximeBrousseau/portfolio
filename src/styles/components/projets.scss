@@ -1,17 +1,19 @@
 .projets {
-    margin-top: 220px;
+    margin-top: 100px;
     margin-bottom: 170px;
 
     .projet {
         background-color: var(--color-primary);
         position: relative;
         margin-top: 200px;
+        &:first-of-type{
+            margin-top: 145px;
+        }
     }
 
     h1 {
         margin: 0;
         margin-bottom: -160px;
-        line-height: 10%;
     }
 
     .grid {
@@ -23,10 +25,6 @@
         max-width: 100%;
         box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.25);
         border: 2px solid var(--color-black);
-
-        &:first-of-type {
-            margin-top: 40px;
-        }
 
         .contenu {
             grid-area: 1 / 1 / 2 / 2;

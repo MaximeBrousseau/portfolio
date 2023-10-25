@@ -61,6 +61,9 @@
     position: absolute;
     top: 55%;
     left: 400px;
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
 
     .cercle_bleu1{
         position: absolute;
@@ -413,6 +416,9 @@
     position: absolute;
     bottom: 0;
     left: 100px;
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
 
     .cercle_turq1_1{
         position: absolute;
@@ -469,6 +475,9 @@
     position: absolute;
     bottom: 0;
     left: 700px;
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
 
     .cercle_turq1_2{
         position: absolute;
@@ -585,6 +594,9 @@
     position: absolute;
     bottom: 0;
     left: 100px;
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
 
     .cercle_rose1_1{
         position: absolute;
@@ -641,6 +653,9 @@
     position: absolute;
     bottom: 0;
     left: 100px;
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
 
     .cercle_rose1_2{
         position: absolute;
@@ -757,6 +772,9 @@
     position: absolute;
     bottom: 0;
     left: 100px;
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
 
     .cercle_gris1_1{
         position: absolute;
@@ -813,6 +831,9 @@
     position: absolute;
     bottom: 0;
     left: -40%;
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
 
     .cercle_gris1_2{
         position: absolute;
