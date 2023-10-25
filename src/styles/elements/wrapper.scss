@@ -7,8 +7,11 @@
     width: calc(100% - var(--spacing-md));
     margin: 0 auto;
     @media screen and (max-width: $breakpoint-md) {
-        // max-width: 1480px;
-        width: calc(100% - var(--spacing-xl));
+        width: calc(100% - var(--spacing-lg));
+    }
+    
+    @media screen and (max-width: $breakpoint-sm) {
+        width: calc(100% - var(--spacing-md));
     }
 }
 .wrapper2 {
@@ -16,8 +19,10 @@
     width: calc(100% - var(--spacing-md));
     margin: auto;
     @media screen and (max-width: $breakpoint-md) {
-        // max-width: 1266px;
-        width: calc(100% - var(--spacing-xl));
+        width: calc(100% - var(--spacing-lg));
+    }
+    @media screen and (max-width: $breakpoint-md) {
+        width: calc(100% - var(--spacing-md));
     }
 }
 

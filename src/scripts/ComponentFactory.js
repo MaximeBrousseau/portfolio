@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
 import Line from './components/Line';
+import Accordion from './components/Accordion';
 
 export default class ComponentFactory {
   constructor() {
@@ -13,6 +14,7 @@ export default class ComponentFactory {
       Modal,
       Scrolly,
       Line,
+      Accordion,
     };
     this.init();
   }

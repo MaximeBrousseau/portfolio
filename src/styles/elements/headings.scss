@@ -53,8 +53,9 @@ h4 {
     font-weight: 300;
     line-height: 1;
     margin: 0;
-
-
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1rem;
+    }
 }
 
 h5 {
@@ -63,6 +64,9 @@ h5 {
     margin: 0;
     line-height: 0.85;
     letter-spacing: 1.7px;
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1.375rem;
+    }
 }
 
 h6 {
@@ -101,6 +105,7 @@ em {
     border-bottom: 2px solid var(--color-black);
     height: 80px;
 
+    background-color: var(--color-primary);
     position: relative;
     overflow: hidden;
 
@@ -133,6 +138,15 @@ em {
             left: 0;
             content: attr(data-text);
             animation: defilement2 10s infinite linear;
+        }
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 50px;
+        .titre {
+            bottom: -3px;
+            &::after{
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -174,14 +188,16 @@ em {
             left: 0;
             content: attr(data-text);
             animation: defilement2 10s infinite linear;
+        }
+    }
 
-            @media screen and (max-width: $breakpoint-sm) {
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 50px;
+        .titre {
+            bottom: -14px;
+            &::after{
                 font-size: 2rem;
             }
-        }
-
-        @media screen and (max-width: $breakpoint-sm) {
-            bottom: -14px;
         }
     }
 

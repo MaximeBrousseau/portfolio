@@ -6,7 +6,6 @@
         background-color: var(--color-primary);
         position: relative;
         margin-top: 200px;
-
     }
 
     h1 {
@@ -16,18 +15,14 @@
     }
 
     .grid {
-
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 0.12fr;
-
         gap: 0;
+
         max-width: 100%;
-
-
         box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.25);
         border: 2px solid var(--color-black);
-
 
         &:first-of-type {
             margin-top: 40px;
@@ -37,9 +32,6 @@
             grid-area: 1 / 1 / 2 / 2;
             border-bottom: 2px solid var(--color-black);
             position: relative;
-
-
-
 
             .reseau_sociaux {
                 position: absolute;
@@ -73,7 +65,7 @@
                     }
 
                 }
-                
+
             }
 
             .info {
@@ -272,29 +264,139 @@
 
     }
 
-    @media screen and (max-width: $breakpoint-sm) {
-        .grid {
-            display: flex;
-            flex-direction: column;
+    @media screen and (max-width: $breakpoint-md) {
 
-            .contenu {
-                height: 500px;
-
-                .info {
-                    top: 22%;
-                    max-width: 80%;
-                    a{
-                        margin-top: 25px;
-                        padding: 10px 20px;
-                    }
-                }
-                .reseau_sociaux {
-                    padding: 10px;
-                    .ligne {
-                        margin: 5px 0;
+        .projet,
+        .option2 {
+            .grid {
+                .bars {
+                    .contenant {
+                        height: 79px;
                     }
                 }
             }
         }
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        h1 {
+            margin: 0;
+            line-height: 100%;
+        }
+
+        .projet,
+        .option2 {
+            margin-top: 50px;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+
+            .grid {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+
+                .contenu {
+                    height: 250px;
+                    order: 2;
+                    border: none;
+
+                    .info {
+                        top: 15%;
+                        max-width: 80%;
+                        border: none;
+
+                        .desc {
+                            display: none;
+                        }
+
+                        a {
+                            margin-top: 50px;
+                            padding: 10px 20px;
+                        }
+                    }
+
+                    .reseau_sociaux {
+                        padding: 10px;
+                        gap: 0;
+
+                        .ligne {
+                            margin: 10px 0;
+                        }
+                    }
+
+                    .info2 {
+                        top: 15%;
+                        left: 10%;
+                        max-width: 80%;
+                        border: none;
+
+                        .desc {
+                            display: none;
+                        }
+
+                        a {
+                            margin-top: 50px;
+                            padding: 10px 20px;
+                        }
+                    }
+
+                    .reseau_sociaux2 {
+                        right: 0;
+                        left: auto;
+                        padding: 10px;
+                        border-right: none;
+                        border-left: 2px solid var(--color-black);
+                        gap: 0;
+
+                        .ligne {
+                            margin: 10px 0;
+                        }
+                    }
+
+                    .tag {
+                        bottom: -4px;
+                    }
+                }
+
+                .max {
+                    order: 1;
+                    border-left: none;
+                    border-right: none;
+
+                    img {
+                        display: block;
+                        height: 290px;
+                        object-fit: cover;
+                        object-position: 0 0;
+                    }
+                }
+
+                .bars {
+                    display: none;
+                }
+
+            }
+
+        }
+
+
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        .projet {
+            .grid {
+                .max {
+                    img {
+                        // height: 250px;
+                    }
+                }
+            }
+        }
+    }
+
 }
