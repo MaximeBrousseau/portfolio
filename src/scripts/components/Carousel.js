@@ -1,50 +1,29 @@
 import Swiper from 'swiper/bundle';
 
-/** Composante Carousel de Timtools */
+/** class pricipale ou on lie notre html et créer nos options de base */
 export default class Carousel {
-  /**
-   * Méthode constructeur
-   * @param {HTMLElement} element - Élément HTML sur lequel la composante est instanciée
-   */
   constructor(element) {
     this.element = element;
-
-    // Options par défaut pour la librairie Swiper
-    this.defaultOptions = {
+    this.options = {
       slidesPerView: 1,
       spaceBetween: 20,
-      pagination: {
-        el: this.element.querySelector('.swiper-pagination'),
-        type: 'bullets',
-      },
     };
-
     this.init();
   }
 
-  /**
-   * Méthode d'initialisation
-   */
+  /** methode init ou on va cibler si nos element html on un data- et on change les options du swiper avec */
   init() {
-    let options = this.defaultOptions;
+    let config = this.options;
 
-    // Gestion des paramètres différents lorsqu'on veut avoir
-    // 2 slides visibles sur grand écran et une seule sur petit écran
-    if (this.element.dataset.carousel == 'split') {
-      options = {
-        ...this.defaultOptions,
+    if (this.element.dataset.split == '') {
+      config = {
+        ...this.options,
         ...{
-          slidesPerView: 1,
-          breakpoints: {
-            768: {
-              slidesPerView: 2,
-            },
-          },
+          slidesPerView: 1.7,
         },
       };
     }
-
-    // Instanciation d'un nouveau Swiper avec les options
-    new Swiper(this.element, options);
+    /** instanciation avec options en parametre */
+    new Swiper(this.element, config);
   }
 }

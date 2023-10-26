@@ -207,36 +207,30 @@
 
 
             .content {
-                padding: 50px;
+                margin: 50px;
+                margin-right: 0;
 
                 p {
                     padding-bottom: 20px;
                     max-width: 75%;
                 }
 
-                .carousel2 {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 20px;
 
-
-                    margin: -20px 150px 0 0;
-
-
+                .swiper{
+                    border-left: 1px solid var(--color-black);
+                    padding: 50px 0;
+                    
+                    .carousel2 {
                     border: none;
-
+                    margin: -20px 150px 0 0;
+                    
                     img {
                         max-width: 100%;
 
-                        &:first-of-type {
-                            border-left: 1px solid var(--color-black);
-                            padding: 50px 0;
-
-                        }
-
                     }
                 }
+                }
+                
             }
 
         }
@@ -246,22 +240,24 @@
                 margin-top: 50px;
 
                 .content {
-                    padding: 0 30px 20px 30px;
+                    padding: 0 10px 10px 10px;
+                    margin: 20px;
 
                     p {
                         max-width: 100%;
                     }
 
-                    .carousel2 {
+                    .swiper{
+                        border-left: 1px solid var(--color-black);
+                        padding: 10px 0;
+                        .carousel2 {
+                            margin: 0;
+    
                         img {
-                            max-width: 200%;
-
-                            &:first-of-type {
-                                padding: 10px 0;
-
-                            }
-
+                            max-width: 120%;
+    
                         }
+                    }
                     }
                 }
             }
@@ -273,7 +269,7 @@
         border: 2px solid var(--color-black);
         background-color: var(--color-primary);
         box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.25);
-
+        overflow: hidden;
         max-width: 75%;
 
         position: relative;
@@ -288,22 +284,22 @@
             }
         }
 
-        .carousel {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
 
-            border-top: none;
-            overflow: hidden;
-            z-index: 2;
+        .swiper{
             border-left: 1px solid var(--color-black);
             padding: 50px 0;
+            .carousel {
+            border-top: none;
+            
+            z-index: 2;
+            
 
             img {
-                max-width: 50%;
+                max-width: 100%;
             }
         }
+        }
+        
 
         @media screen and (max-width: $breakpoint-sm) {
 
@@ -311,7 +307,7 @@
             max-width: 100%;
 
             .content {
-                padding: 0 30px 20px 30px;
+                padding: 0 0 20px 30px;
 
                 p {
                     max-width: 100%;
@@ -319,14 +315,7 @@
                 }
             }
 
-            .carousel {
-                padding: 20px 0;
-
-                img {
-                    max-width: 80%;
-                }
-            }
-
+           
         }
     }
 
@@ -446,7 +435,7 @@
             margin-top: 100px;
 
             .content {
-
+                margin-right: 50px;
                 img {
                     display: flex;
                     justify-content: center;

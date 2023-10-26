@@ -4,6 +4,7 @@ import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
 import Line from './components/Line';
 import Accordion from './components/Accordion';
+import Tracking from './components/Tracking';
 
 export default class ComponentFactory {
   constructor() {
@@ -15,6 +16,7 @@ export default class ComponentFactory {
       Scrolly,
       Line,
       Accordion,
+      Tracking,
     };
     this.init();
   }
