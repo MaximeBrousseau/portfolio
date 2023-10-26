@@ -414,11 +414,15 @@
                     border-bottom: 2px solid var(--color-black);
                     border-left: 2px solid var(--color-black);
                     padding-top: 50px;
-
+                    .acco-is-active & {
+                            transform: rotate(45deg);
+                        }
                     .plus {
                         height: 1px;
                         width: 30px;
                         background-color: var(--color-black);
+
+                        
 
                         &:first-of-type {
                             transform: rotate(90deg);
@@ -444,7 +448,10 @@
                         transform: translateY(0px);
                         opacity: 1;
                     }
+
+                    
                 }
+                
 
                 .content {
                     display: flex;
