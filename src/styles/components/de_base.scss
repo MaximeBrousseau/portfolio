@@ -18,11 +18,18 @@
             grid-area: 1 / 1 / 2 / 2;
             border-bottom: 2px solid var(--color-black);
             position: relative;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .name {
                 margin-top: -3%;
                 margin-left: 3%;
+            }
+
+            .button{
+                
+                height: fit-content;
             }
 
             .reseau_sociaux {
@@ -150,6 +157,11 @@
                         margin: 10px 0;
                     }
                 }
+
+                .button{
+                    padding: 10px 20px;
+                }
+
 
                 .tag{
                     bottom: -3px;
