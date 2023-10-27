@@ -162,6 +162,13 @@
     display: flex;
     justify-content: right;
 
+   
+    .sous_titre{
+        background-color: var(--color-primary);
+    }
+        
+    
+
     .contenue_ambition {
         max-width: 50%;
         border: 2px solid var(--color-black);
