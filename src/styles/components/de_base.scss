@@ -19,16 +19,22 @@
             border-bottom: 2px solid var(--color-black);
             position: relative;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: left;
+            
 
             .name {
                 margin-top: -3%;
                 margin-left: 3%;
             }
-
-            .button{
+            .ajout{
+                max-width: 75%;
+                margin-left: 50px;
                 
+            }
+            .button{
+                margin-left: 50px;
                 height: fit-content;
             }
 
@@ -156,6 +162,10 @@
                     .ligne {
                         margin: 10px 0;
                     }
+                }
+
+                .ajout{
+                    display: none;
                 }
 
                 .button{
